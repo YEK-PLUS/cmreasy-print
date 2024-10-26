@@ -54,7 +54,6 @@ export const instructionAsToPaymentForCarriageSchema = z.object({
   carriagePaid: z.string(),
   carriageForward: z.string(),
 });
-export const codSchema = z.string();
 export const carriersReservationsAndObservationsSchema = z.string();
 export const specialAgreementsSchema = z.object({
   name: z.string(),
@@ -107,26 +106,29 @@ export const signatureAndStampOfTheConsigneeSchema = z.object({
 });
 
 export const finalDocumentSchema = z.object({
-  sender: customerCarrierNodeSchema.optional(),
-  consignee: customerCarrierNodeSchema.optional(),
-  placeOfDelivery: customerCarrierNodeSchema.optional(),
+  sender: customerCarrierNodeSchema,
+  consignee: customerCarrierNodeSchema,
+  placeOfDelivery: customerCarrierNodeSchema,
   placeAndDateOfTakingOverTheGoods:
-    placeAndDateOfTakingOverTheGoodsSchema.optional(),
-  documentsAttached: documentsAttachedSchema.optional(),
-  // products:
-  adr: adrSchema.optional(),
-  sendersInstructions: sendersInstructionsSchema.optional(),
+    placeAndDateOfTakingOverTheGoodsSchema,
+  documentsAttached: documentsAttachedSchema,
+  products: productsSchema,
+  adr: adrSchema,
+  sendersInstructions: sendersInstructionsSchema,
   instructionAsToPaymentForCarriage:
-    instructionAsToPaymentForCarriageSchema.optional(),
-  cod: codSchema.optional(),
+    instructionAsToPaymentForCarriageSchema,
   carriersReservationsAndObservations:
-    carriersReservationsAndObservationsSchema.optional(),
-  specialAgreements: specialAgreementsSchema.optional(),
-  toBePaidBy: toBePaidBySchema.optional(),
-  established: establishedInOnSchema.optional(),
-  carrier: customerCarrierNodeSchema.optional(),
-  successiveCarrier: customerCarrierNodeSchema.optional(),
-  cmrNo: cmrNoSchema.optional(),
+    carriersReservationsAndObservationsSchema,
+  specialAgreements: specialAgreementsSchema,
+  toBePaidBy: toBePaidBySchema,
+  established: establishedInOnSchema,
+  carrier: customerCarrierNodeSchema,
+  successiveCarrier: customerCarrierNodeSchema,
+  cashOnDelivery: cashOnDeliverySchema,
+  cmrNo: cmrNoSchema,
+  signatureAndStampOfTheSender: signatureAndStampOfTheSenderSchema,
+  signatureAndStampOfTheCarrier: signatureAndStampOfTheCarrierSchema,
+  signatureAndStampOfTheConsignee: signatureAndStampOfTheConsigneeSchema,
 });
 export type FinalDocument = z.infer<typeof finalDocumentSchema>;
 export type Customer = z.infer<typeof customerCarrierNodeSchema>;
@@ -143,7 +145,6 @@ export type SendersInstructionsType = z.infer<typeof sendersInstructionsSchema>;
 export type InstructionAsToPaymentForCarriageType = z.infer<
   typeof instructionAsToPaymentForCarriageSchema
 >;
-export type Cod = z.infer<typeof codSchema>;
 export type CarriersReservationsAndObservationsType = z.infer<
   typeof carriersReservationsAndObservationsSchema
 >;
