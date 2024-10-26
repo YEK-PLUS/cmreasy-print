@@ -1,5 +1,5 @@
 {
-  "name": "print",
+  "name": "@yek-plus/print",
   "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
@@ -9,8 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch",
     "upload": "npm run patch && npm run publish:npm && npm run publish:github",
-    "publish:npm": "npm publish --@yek-plus:registry=https://registry.npmjs.org",
-    "publish:github": "npm publish --@yek-plus:registry=https://npm.pkg.github.com",
+    "prepublish": "npm run patch",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
@@ -20,9 +19,8 @@
     "posttest": "npm run lint"
   },
   "keywords": [],
-  "author": "",
+  "author": "YEK-PLUS",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@types/node": "^22.7.5",
     "@types/qrcode": "^1.5.5",
@@ -38,8 +36,8 @@
     "zod": "^3.23.8"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
@@ -48,5 +46,7 @@
   "bugs": {
     "url": "https://github.com/YEK-PLUS/cmreasy-print/issues"
   },
-  "homepage": "https://github.com/YEK-PLUS/cmreasy-print#readme"
+  "homepage": "https://github.com/YEK-PLUS/cmreasy-print#readme",
+  "types": "./dist/index.d.ts",
+  "description": ""
 }
