@@ -1,15 +1,22 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "jsx": "react",
     "rootDir": "src",
     "outDir": "dist",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "react",
     "target": "ESNext",
     "module": "NodeNext",
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "resolveJsonModule": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json",
+    "src/**/*.tsx",
+    "test/**/*.ts"
+  ]
 }

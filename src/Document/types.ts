@@ -1,26 +1,26 @@
-import z from "zod";
+import z from 'zod';
 export const customerCarrierSchema = z
   .object({
     name: z.string(),
-    country: z.string().optional().default(" "),
-    city: z.string().optional().default(" "),
-    postCode: z.string().optional().default(" "),
-    telephone: z.string().optional().default(" "),
-    address: z.string().optional().default(" "),
-    vat: z.string().optional().default(" "),
-    eori: z.string().optional().default(" "),
-    additionalInfo: z.string().optional().default(" "),
+    country: z.string().optional().default(' '),
+    city: z.string().optional().default(' '),
+    postCode: z.string().optional().default(' '),
+    telephone: z.string().optional().default(' '),
+    address: z.string().optional().default(' '),
+    vat: z.string().optional().default(' '),
+    eori: z.string().optional().default(' '),
+    additionalInfo: z.string().optional().default(' '),
     receiverEmails: z
       .array(
         z.object({
           receiverEmail: z.string(),
-        })
+        }),
       )
       .optional()
       .default([]),
   })
   .optional()
-  .default({ name: " " });
+  .default({name: ' '});
 export const plateSchema = z.object({
   plate: z.string().optional(),
   carrier: customerCarrierSchema.optional(),
@@ -28,7 +28,7 @@ export const plateSchema = z.object({
 export const customerCarrierNodeSchema = z.object({
   client: customerCarrierSchema
     .optional()
-    .default(customerCarrierSchema.parse({ name: "" })),
+    .default(customerCarrierSchema.parse({name: ''})),
   plate: plateSchema.optional().default(plateSchema.parse({})),
   plate2: plateSchema.optional().default(plateSchema.parse({})),
 });
@@ -38,15 +38,15 @@ export const placeAndDateOfTakingOverTheGoodsSchema = z.object({
   takeCountry: z.string(),
 });
 export const documentsAttachedSchema = z.object({
-  documentsAttached1: z.string().optional().default(""),
-  documentsAttached2: z.string().optional().default(""),
-  documentsAttached3: z.string().optional().default(""),
+  documentsAttached1: z.string().optional().default(''),
+  documentsAttached2: z.string().optional().default(''),
+  documentsAttached3: z.string().optional().default(''),
 });
 export const adrSchema = z.object({
-  adrClass: z.string().optional().default(""),
-  adrNumber: z.string().optional().default(""),
-  adrLetter: z.string().optional().default(""),
-  adr: z.string().optional().default(""),
+  adrClass: z.string().optional().default(''),
+  adrNumber: z.string().optional().default(''),
+  adrLetter: z.string().optional().default(''),
+  adr: z.string().optional().default(''),
 });
 export const sendersInstructionsSchema = z.string();
 export const instructionAsToPaymentForCarriageSchema = z.object({
@@ -61,10 +61,10 @@ export const specialAgreementsSchema = z.object({
 });
 
 export const toBePaidByNodeSchema = z.object({
-  sender: z.string().optional().default(""),
-  currency: z.string().optional().default(""),
-  consignee: z.string().optional().default(""),
-  currency2: z.string().optional().default(""),
+  sender: z.string().optional().default(''),
+  currency: z.string().optional().default(''),
+  consignee: z.string().optional().default(''),
+  currency2: z.string().optional().default(''),
 });
 export const toBePaidBySchema = z.object({
   carriageCharges: toBePaidByNodeSchema,
@@ -81,11 +81,11 @@ export const establishedInOnSchema = z.object({
 });
 export const cashOnDeliverySchema = z.string();
 export const productsNodeSchema = z.object({
-  marksAndNos: z.string().optional().default(""),
-  numberOfPackages: z.string().optional().default(""),
-  methodOfPacking: z.string().optional().default(""),
-  natureOfTheGoods: z.string().optional().default(""),
-  statisticalNumber: z.string().optional().default(""),
+  marksAndNos: z.string().optional().default(''),
+  numberOfPackages: z.string().optional().default(''),
+  methodOfPacking: z.string().optional().default(''),
+  natureOfTheGoods: z.string().optional().default(''),
+  statisticalNumber: z.string().optional().default(''),
   grossWeightInKg: z.number().optional(),
   volumeInM3: z.number().optional(),
 });
@@ -109,14 +109,12 @@ export const finalDocumentSchema = z.object({
   sender: customerCarrierNodeSchema,
   consignee: customerCarrierNodeSchema,
   placeOfDelivery: customerCarrierNodeSchema,
-  placeAndDateOfTakingOverTheGoods:
-    placeAndDateOfTakingOverTheGoodsSchema,
+  placeAndDateOfTakingOverTheGoods: placeAndDateOfTakingOverTheGoodsSchema,
   documentsAttached: documentsAttachedSchema,
   products: productsSchema,
   adr: adrSchema,
   sendersInstructions: sendersInstructionsSchema,
-  instructionAsToPaymentForCarriage:
-    instructionAsToPaymentForCarriageSchema,
+  instructionAsToPaymentForCarriage: instructionAsToPaymentForCarriageSchema,
   carriersReservationsAndObservations:
     carriersReservationsAndObservationsSchema,
   specialAgreements: specialAgreementsSchema,
