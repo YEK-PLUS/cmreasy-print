@@ -9,12 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch",
     "upload": "npm run patch && npm run publish:npm && npm run publish:github",
-    "prepublish": "npm run patch",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix",
-    "prepare": "npm run compile",
+    "prepare": "npm run compile && npm run patch",
     "pretest": "npm run compile",
     "posttest": "npm run lint"
   },
