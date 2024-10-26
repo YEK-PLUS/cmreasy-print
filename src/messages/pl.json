@@ -1,0 +1,96 @@
+{
+    "head": {
+        "info": {
+            "sender": "Kopia dla nadawcy",
+            "consignee": "Kopia dla odbiorcy",
+            "carrier": "Kopia dla przewoźnika"
+        }
+    },
+    "cmrNo": {
+        "title": "MIĘDZYNARODOWY SAMOCHODOWY LIST PRZEWOZOWY",
+        "description": "Niniejszy przewóz podlega postanowieniom konwencji o umowie międzynarodowej przewozu drogowego towarów (CMR) bez względu na jakąkolwiek przeciwną klauzulę.",
+        "label": "CMR No"
+    },
+    "in1": {
+        "vat": "NIP",
+        "eori": "EORI",
+        "phone": "Tel.",
+        "plates": "Nr. rej."
+    },
+    "sender": {
+        "title": "Nadawca (nazwisko lub nazwa, adres, kraj)"
+    },
+    "consignee": {
+        "title": "Odbiorca (nazwisko lub nazwa, adres, kraj)"
+    },
+    "placeOfDelivery": {
+        "title": "Miejsce przeznaczenia (miejscowość, kraj)"
+    },
+    "carrier": {
+        "title": "Przewoźnik (nazwisko lub nazwa, adres, kraj)"
+    },
+    "successiveCarrier": {
+        "title": "Kolejni przewoźnicy (nazwisko lub nazwa, adres, kraj)"
+    },
+    "placeAndDateOfTakingOverTheGoods": {
+        "title": "Miejsce i data załadowania (miejscowość, kraj, data)"
+    },
+    "carrierReservationsAndObservations": {
+        "title": "Zastrzeżenia i uwagi przewoźnika"
+    },
+    "senderInstructions": {
+        "title": "Instrukcje nadawcy"
+    },
+    "instructionAsToPaymentForCarriage": {
+        "title": "Postanowienia odnośnie przewoźnego",
+        "carriagePaid": "Przewoźne zaplacone",
+        "carriageForward": "Przewoźne nieoplacone"
+    },
+    "specialAgreements": {
+        "title": "Postanowienia specjalne"
+    },
+    "toBePaidBy": {
+        "title": "Do zapłacenia",
+        "sender": "Nadawca",
+        "currency": "Waluta",
+        "consignee": "Odbiorca",
+        "carriageCharges": "Przewoźne",
+        "deductions": "Bonifikaty",
+        "balance": "Saldo",
+        "supplementaryCharges": "Dopłaty",
+        "miscellaneous": "Koszty dodatkowe",
+        "cargoInsurance": "Ubezpieczenie ładunków",
+        "totalToBePaid": "Razem"
+    },
+    "products": {
+        "marksAndNos": "Cechy i numery",
+        "numberOfPackages": "Ilość sztuk",
+        "methodOfPacking": "Sposób opakowania",
+        "natureOfTheGoods": "Rodzaj towaru",
+        "statisticalNumber": "Nr statystyczny",
+        "grossWeightInKg": "Waga brutto w kg",
+        "volumeInM3": "Objętość w m3"
+    },
+    "adr": {
+        "class": "Klasa",
+        "number": "Liczba",
+        "letter": "Litera"
+    },
+    "cashOnDelivery": {
+        "title": "Zapłata (CoD)"
+    },
+    "establishedInOn": {
+        "title": "Wystawiono w",
+        "on": "dnia"
+    },
+    "signatureAndStampOfTheSender": {
+        "title": "Podpis i stempel nadawcy"
+    },
+    "signatureAndStampOfTheCarrier": {
+        "title": "Podpis i stempel przewoźnika"
+    },
+    "signatureAndStampOfTheConsignee": {
+        "title": "Przesylkę otrzymano",
+        "footer": "Podpis i stempel odbiorcy"
+    }
+}

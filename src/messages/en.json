@@ -1,0 +1,96 @@
+{
+    "head": {
+        "info": {
+            "sender": "Copy for sender",
+            "consignee": "Copy for consignee",
+            "carrier": "Copy for carrier"
+        }
+    },
+    "cmrNo": {
+        "title": "INTERNATIONAL CONSIGNMENT",
+        "description": "This carriage is subject notwithstanding any clause to the contrary, to the Convention on the Contract for the international Carriage of goods by road (CMR)",
+        "label": "CMR No"
+    },
+    "in1": {
+        "vat": "VAT",
+        "eori": "EORI",
+        "phone": "Phone",
+        "plates": "Truck Plates"
+    },
+    "sender": {
+        "title": "Sender (name, address, country)"
+    },
+    "consignee": {
+        "title": "Consignee (name, address, country)"
+    },
+    "placeOfDelivery": {
+        "title": "Place of delivery of the goods (place, country)"
+    },
+    "carrier": {
+        "title": "Carrier (name, address, country)"
+    },
+    "successiveCarrier": {
+        "title": "Successive carriers (name, address, country)"
+    },
+    "placeAndDateOfTakingOverTheGoods": {
+        "title": "Place and date of taking over the goods (place, country, data)"
+    },
+    "carrierReservationsAndObservations": {
+        "title": "Carrier's reservations and observations"
+    },
+    "senderInstructions": {
+        "title": "Sender's instructions"
+    },
+    "instructionAsToPaymentForCarriage": {
+        "title": "Instruction as to payment for carriage",
+        "carriagePaid": "Carrier paid",
+        "carriageForward": "Carrier forward"
+    },
+    "specialAgreements": {
+        "title": "Special agreements"
+    },
+    "toBePaidBy": {
+        "title": "To be paid by",
+        "sender": "Sender",
+        "currency": "Currency",
+        "consignee": "Consignee",
+        "carriageCharges": "Carriage charges",
+        "deductions": "Deductions",
+        "balance": "Balance",
+        "supplementaryCharges": "Supplem. charges",
+        "miscellaneous": "Miscellaneous",
+        "cargoInsurance": "Cargo insurance",
+        "totalToBePaid": "Total to be paid"
+    },
+    "products": {
+        "marksAndNos": "Marks and Nos",
+        "numberOfPackages": "Number of packages",
+        "methodOfPacking": "Method of packing",
+        "natureOfTheGoods": "Nature of goods",
+        "statisticalNumber": "Statistical number",
+        "grossWeightInKg": "Gross weight in kg",
+        "volumeInM3": "Volume in m3"
+    },
+    "adr": {
+        "class": "Class",
+        "number": "Number",
+        "letter": "Letter"
+    },
+    "cashOnDelivery": {
+        "title": "Cash on delivery"
+    },
+    "establishedInOn": {
+        "title": "Established in",
+        "on": "on"
+    },
+    "signatureAndStampOfTheSender": {
+        "title": "Signature and stamp of the sender"
+    },
+    "signatureAndStampOfTheCarrier": {
+        "title": "Signature and stamp of the carrier"
+    },
+    "signatureAndStampOfTheConsignee": {
+        "title": "Goods received",
+        "footer": "Signature and stamp of the consignee"
+    }
+}

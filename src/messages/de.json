@@ -1,0 +1,96 @@
+{
+    "head": {
+        "info": {
+            "sender": "Kopie für Absender",
+            "consignee": "Kopie für Empfänger",
+            "carrier": "Kopie für den Frachtführer"
+        }
+    },
+    "cmrNo": {
+        "title": "INTERNATIONALER FRACHTBRIEF",
+        "description": "Dise Beförderung unterliegt trotz einer gegenteiligen Abmachung den Bestimmungen des Übereinkommens über den Beförderungsvertrag im internat. Straßengüterverkehr (CRM).",
+        "label": "CMR No"
+    },
+    "in1": {
+        "vat": "USt-IdNr.",
+        "eori": "EORI",
+        "phone": "Tel.",
+        "plates": "LKW-Kennzeichen"
+    },
+    "sender": {
+        "title": "Absender (Name, Anschrift, Land)"
+    },
+    "consignee": {
+        "title": "Empfänger (Name, Anschrift, Land)"
+    },
+    "placeOfDelivery": {
+        "title": "Auslieferungsort des Gutes (Ort Land)"
+    },
+    "carrier": {
+        "title": "Frachtführer (Name, Anschrift, Land)"
+    },
+    "successiveCarrier": {
+        "title": "Nachfolgende Frachtführer (Name, Anschrift, Land)"
+    },
+    "placeAndDateOfTakingOverTheGoods": {
+        "title": "Ort und Tag der Übernahme des Gutes (Ort, Land, Datum)"
+    },
+    "carrierReservationsAndObservations": {
+        "title": "Vorbehalte und Bemerkungen der Frachtführer"
+    },
+    "senderInstructions": {
+        "title": "Anweisungen des Absenders"
+    },
+    "instructionAsToPaymentForCarriage": {
+        "title": "Bestimmungen für Frachtgebühr",
+        "carriagePaid": "Fracht bezahlt",
+        "carriageForward": "Fracht nicht bezahlt"
+    },
+    "specialAgreements": {
+        "title": "Besondere Vereinbarungen"
+    },
+    "toBePaidBy": {
+        "title": "Zu zahlen vom",
+        "sender": "Aender",
+        "currency": "Währung",
+        "consignee": "Empfänger",
+        "carriageCharges": "Fracht",
+        "deductions": "Boni",
+        "balance": "Saldo",
+        "supplementaryCharges": "Zuschläge",
+        "miscellaneous": "Zusätzliche Kosten",
+        "cargoInsurance": "Versicherung",
+        "totalToBePaid": "Gesamt"
+    },
+    "products": {
+        "marksAndNos": "Kennzeichen und Nummern",
+        "numberOfPackages": "Anzahl der Packstücke",
+        "methodOfPacking": "Art der Verpackung",
+        "natureOfTheGoods": "Bezeichnung des Gutes",
+        "statisticalNumber": "Statistiknummer",
+        "grossWeightInKg": "Bruttogewicht in kg",
+        "volumeInM3": "Umfang in m3"
+    },
+    "adr": {
+        "class": "Klasse",
+        "number": "Anzahl",
+        "letter": "Buchstabe"
+    },
+    "cashOnDelivery": {
+        "title": "Bezahlung (CoD)"
+    },
+    "establishedInOn": {
+        "title": "Ausgestellt in",
+        "on": "am"
+    },
+    "signatureAndStampOfTheSender": {
+        "title": "Unterschrift und Stempel des Absenders"
+    },
+    "signatureAndStampOfTheCarrier": {
+        "title": "Unterschrift und Stempel des Frachtführers"
+    },
+    "signatureAndStampOfTheConsignee": {
+        "title": "Gut empfangen",
+        "footer": "Unterschrift und Stempel des Empfängers"
+    }
+}
