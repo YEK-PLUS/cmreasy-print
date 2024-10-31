@@ -4,8 +4,10 @@ import {GeneratePDF} from './Document';
 
 import {Languages} from './Document/languages';
 import {typeCheck} from './Document/utils';
+import type * as Types from './Document/types';
 import {FinalDocument, finalDocumentSchema} from './Document/types';
 
+export default Types;
 interface GetBufferProps {
   ({
     document,
