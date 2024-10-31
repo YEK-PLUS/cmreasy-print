@@ -29,7 +29,7 @@ export const SignatureAndStampOfTheSender: FC<
       wrapperStyle={{height: 100}}
       innerStyle={styles.main}
     >
-      <Image src={signature} style={{width: 55, height: 55}} />
+      {signature && <Image src={signature} style={{width: 55, height: 55}} />}
       <IntlText
         id="signatureAndStampOfTheSender.title"
         language={language}
